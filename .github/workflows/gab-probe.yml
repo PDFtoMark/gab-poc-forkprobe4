@@ -1,0 +1,11 @@
+name: GAB Probe
+on:
+  push:
+    branches: [main]
+  issue_comment:
+    types: [created]
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo probe
